@@ -8,7 +8,7 @@ use Class::Prototyped;
 BEGIN {
     use Exporter ();
     use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
-    ($VERSION)   = ('$Revision: 2.3 $' =~ m/([\.\d]+)/) ;
+    ($VERSION)   = ('$Revision: 2.4 $' =~ m/([\.\d]+)/) ;
     @ISA         = qw(Exporter);
     #Give a hoot don't pollute, do not export more than needed by default
     @EXPORT      = qw();
@@ -59,7 +59,7 @@ Class::Prototyped::Mixin - Mixin Support for Class::Prototyped
  package HelloWorld::Italic;
  use base qw(Class::Prototyped);
 
-__PACKAGE__->reflect->addSlot(
+ __PACKAGE__->reflect->addSlot(
   [qw(hello superable)] => sub {
     my $self = shift;
     my $ret = $self->reflect->super('hello', @_);
@@ -142,7 +142,7 @@ CVS access is via:
 
   cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/sw-design login
 
-  cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/sw-design co -P modulename
+  cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/sw-design co -P cpmixin
 
 
 
