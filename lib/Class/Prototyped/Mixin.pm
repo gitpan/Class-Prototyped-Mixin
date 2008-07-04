@@ -8,7 +8,7 @@ use Class::Prototyped;
 BEGIN {
     use Exporter ();
     use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
-    ($VERSION)   = ('$Revision: 2.4 $' =~ m/([\.\d]+)/) ;
+    $VERSION     = 3.00_00 ;
     @ISA         = qw(Exporter);
     #Give a hoot don't pollute, do not export more than needed by default
     @EXPORT      = qw();

@@ -1,11 +1,15 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Class-Prototyped-Mixin
-version:      2.4
-version_from: lib/Class/Prototyped/Mixin.pm
-installdirs:  site
-requires:
+--- #YAML:1.0
+name:                Class-Prototyped-Mixin
+version:             3
+abstract:            Mixin Support for Class::Prototyped
+license:             ~
+author:              
+    - Terrence Brannon (metaperl@gmail.com)
+generated_by:        ExtUtils::MakeMaker version 6.42
+distribution_type:   module
+requires:     
+    Class::Prototyped:             1.11
     Test::Simple:                  0.44
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.17
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3

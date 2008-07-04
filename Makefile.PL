@@ -10,6 +10,7 @@ WriteMakefile(
     ABSTRACT     => 'Mixin Support for Class::Prototyped',
     PREREQ_PM    => {
                      'Test::Simple' => 0.44,
+		     'Class::Prototyped' => 1.11
                     },
 );
 
